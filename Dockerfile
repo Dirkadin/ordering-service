@@ -4,8 +4,7 @@ RUN apt-get install -y git
 
 RUN git clone https://github.com/Dirkadin/ordering-service.git
 
-COPY /ordering-service /app
-WORKDIR /app
+WORKDIR /ordering-service
 
 RUN npm install
 
