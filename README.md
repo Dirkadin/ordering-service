@@ -1,3 +1,3 @@
-# SEM-Project2
+# ordering-service
 
 EC2 IP:

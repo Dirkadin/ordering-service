@@ -1,5 +1,5 @@
 {
-  "name": "sem-project1",
+  "name": "ordering-service",
   "version": "0.0.0",
   "private": true,
   "scripts": {

@@ -5,7 +5,7 @@
  */
 
 var app = require('../app');
-var debug = require('debug')('sem-project2:server');
+var debug = require('debug')('ordering-service:server');
 var http = require('http');
 
 /**
