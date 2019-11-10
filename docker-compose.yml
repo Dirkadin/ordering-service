@@ -1,0 +1,19 @@
+version: '3'
+services:
+  ordering-service:
+    build: ./ordering-service
+    image: "ordering-service:1.0"
+    container_name: ordering-service
+    ports:
+      - "3000:80"
+    volumes:
+      - ./app/logs:hotburger-logs
+
+  monitoring-service:
+    build: ./monitoring-service
+    image: "monitoring-service:1.0"
+    container_name: monitoring-service
+    ports:
+      - "3001:8080"
+    volumes:
+      - ./app/logs:hotburger-logs
