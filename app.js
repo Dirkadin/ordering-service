@@ -40,7 +40,7 @@ app.post('/purchase/:item/:quantity', function (req, res) {
     var quantity = req.params.quantity.toLowerCase();
 
     if (item === 'hotdog' || item === 'hamburger' || item === 'soda' || item === 'cookie') {
-        orders.info(item + ',' + quantity);
+        orders.info(item + ' ' + quantity);
         res.sendStatus(200);
     } else {
         log.error('POST /purchase BAD ITEM');
