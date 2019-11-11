@@ -35,7 +35,6 @@ app.use('/getmenu', getmenuRouter);
 
 app.post('/purchase/:item/:quantity', function (req, res) {
     console.log(req.params.item, req.params.quantity);
-    log.info('POST /purchase');
     var item = req.params.item.toLowerCase();
     var quantity = req.params.quantity.toLowerCase();
 
@@ -43,7 +42,6 @@ app.post('/purchase/:item/:quantity', function (req, res) {
         orders.info(item + ' ' + quantity);
         res.sendStatus(200);
     } else {
-        log.error('POST /purchase BAD ITEM');
         res.sendStatus(400);
     }
 
